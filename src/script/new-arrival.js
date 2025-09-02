@@ -1,4 +1,4 @@
-const productGrid = document.getElementById("ProductGrid");
+const ProductArrival = document.getElementById("ProductArrival");
 const BASE_URL = "https://api.itbook.store/1.0/new";
 
 async function getProducts() {
@@ -6,7 +6,7 @@ async function getProducts() {
     const response = await fetch(BASE_URL);
     const data = await response.json();
 
-    productGrid.innerHTML = "";
+    ProductArrival.innerHTML = "";
 
     data.books.forEach((item) => {
       const card = document.createElement("div");
@@ -33,11 +33,11 @@ async function getProducts() {
         </div>
       `;
 
-      productGrid.appendChild(card);
+      ProductArrival.appendChild(card);
     });
   } catch (error) {
     console.error("Error fetching products:", error);
-    productGrid.innerHTML = `<p class="text-red-500">Failed to load products.</p>`;
+    ProductArrival.innerHTML = `<p class="text-red-500">Failed to load products.</p>`;
   }
 }
 

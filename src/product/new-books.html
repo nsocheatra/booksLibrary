@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./output.css" />
-    <link rel="icon" type="image/x-icon" href="./assets/icon/favicon.ico">
+    <link rel="stylesheet" href="../output.css" />
+    <link rel="icon" type="image/x-icon" href="../assets/icon/favicon.ico">
     <title>Book Library</title>
   </head>
   <body class="bg-gradient-to-r from-blue-400 to-blue-300 text-white">
-    <main class="min-h-screen">
+    <!-- header -->
+    <main class="min-h-screen sticky top-0">
       <header
         class="flex flex-wrap sm:justify-start sm:flex-nowrap w-full text-sm py-3 border-b border-white/20 sticky top-0 z-10 backdrop-blur-md bg-white/10"
       >
@@ -61,6 +62,16 @@
         </nav>
       </header>
     </main>
+<!-- End header -->
+<!-- card -->
+ <section class="py-8">
+   <h2 class="text-2xl font-bold text-center mb-6 rounded ">New Arrivals</h2>
+   <div class="mt-8 flex flex-wrap gap-4 justify-center">
+     <div class="grid grid-cols-3 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="ProductArrival">
+     </div>
+   </div>
+ </section>
+<!-- end card -->
 
     <!-- footer -->
     <main class="mt-24">
@@ -341,5 +352,6 @@
         </div>
       </footer>
     </main>
+    <script src="../script/new-arrival.js"></script>
   </body>
 </html>
