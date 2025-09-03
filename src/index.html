@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./output.css" />
     <link rel="icon" type="image/x-icon" href="./assets/icon/favicon.ico">
+    <!-- awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- end awesome -->
     <title>Book Library</title>
   </head>
   <body class="bg-gradient-to-r from-blue-400 to-blue-300 text-white ">
-    <main class="min-h-screen sticky top-0 z-10">
+    <main class="sticky top-0 z-10">
       <header
         class="flex flex-wrap sm:justify-start sm:flex-nowrap w-full text-sm py-3 border-b border-white/20 sticky top-0 z-10 backdrop-blur-md bg-white/10"
       >
@@ -17,16 +20,18 @@
         >
           <a
             class="sm:order-1 flex-none text-xl font-bold focus:outline-hidden focus:opacity-80"
-            href="#"
+            href="./index.html"
             >Books Library</a
           >
+          
           <div class="sm:order-3 flex items-center gap-x-2">
-                       <button
+            <button
               type="button"
-              class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg  bg-blue-400 text-white shadow-2xs hover:text-neutral-50 hover:bg-blue-500 focus:outline-hidden focus:bg-blue-500 disabled:opacity-50 disabled:pointer-events-none"
-            >
-              Button
+              class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg hover:cursor-pointer bg-blue-500 text-white shadow-2xs hover:text-neutral-50 hover:bg-blue-400 focus:outline-hidden focus:bg-blue-500 disabled:opacity-50 disabled:pointer-events-none"
+            ><a href="../src/product/login.html" class="fa-solid fa-right-to-bracket"></a>
+
             </button>
+              
           </div>
           <div
             id="hs-navbar-alignment"
@@ -34,26 +39,26 @@
             aria-labelledby="hs-navbar-alignment-collapse"
           >
             <div
-              class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:mt-0 sm:ps-5"
+              class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:mt-0 sm:ps-5 "
             >
               <a
                 class="font-semibold text-neutral-50 hover:text-blue-500 focus:outline-hidden focus:text-blue-500"
-                href="#"
+                href="../src/product/404.html"
                 >Special Offers</a
               >
               <a
                 class="font-semibold text-neutral-50 hover:text-blue-500 focus:outline-hidden focus:text-blue-500"
-                href="../product/new-books.html"
+                href="../src/product/404.html"
                 >New Books</a
               >
               <a
                 class="font-semibold text-neutral-50 hover:text-blue-500 focus:outline-hidden focus:text-blue-500"
-                href="#"
+                href="../src/product/categories.html"
                 >Categories</a
               >
               <a
                 class="font-semibold text-neutral-50 hover:text-blue-500 focus:outline-hidden focus:text-blue-500"
-                href="#"
+                href="../src/product/404.html"
                 >Best Sellers</a
               >
             </div>
@@ -62,11 +67,48 @@
       </header>
     </main>
 
+<!-- Middle Section -->
+<section class=" flex items-center justify-center mt-20 relative overflow-hidden">
+  <!-- Overlay for better text visibility -->
+  <div class="absolute inset-0 bg-opacity-50"></div>
+
+  <!-- Content -->
+  <div class="relative container mx-auto px-4 text-center z-10 text-white">
+    <h1 class="mb-6 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl" style="line-height: 1.2">
+      Discover <span class="relative whitespace-nowrap text-blue-700 dark:text-white">
+        <svg aria-hidden="true" viewBox="0 0 418 42" class="absolute top-2/3 left-0 h-[0.58em] w-full fill-blue-400/20 dark:fill-blue-300/60" preserveAspectRatio="none">
+          <path d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.780 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.540-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.810 23.239-7.825 27.934-10.149 28.304-14.005 .417-4.348-3.529-6-16.878-7.066Z"></path>
+        </svg>
+        <span class="relative">Amazing</span>
+      </span> Books
+    </h1>
+    <p class="mx-auto mb-8 max-w-2xl text-lg">
+      Explore thousands of books, find your next favorite read, <br>and build your personal library
+    </p>
+
+    <div class="relative w-full max-w-xl mx-auto bg-white/10 rounded-full" id="Search">
+  <input placeholder="e.g. Blog" class="rounded-full w-full h-16 bg-transparent py-2 pl-8 pr-32 outline-none border-2 border-gray-100 shadow-md hover:outline-none focus:ring-teal-200 focus:border-teal-200" type="text" name="query" id="query">
+  <button type="submit" class="absolute inline-flex items-center h-10 px-4 py-2 text-sm text-white transition duration-150 ease-in-out rounded-full outline-none right-3 top-3 bg-blue-400 sm:px-6 sm:text-base sm:font-medium hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500" id="searchButton">
+    <svg class="-ml-0.5 sm:-ml-1 mr-2 w-4 h-4 sm:h-5 sm:w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+    </svg>
+    Search
+  </button>
+  <script src="../script/search.js"></script>
+</div>
+  </div>
+</section>
 <!-- card -->
  <section class="py-8">
-   <h2 class="text-2xl font-bold text-center mb-6 rounded ">New Arrivals</h2>
+   <div class="flex justify-center items-center mt-8" data-aos="fade-up" data-aos-delay="400">
+      <a href="#pricing" rel="noopener noreferrer"
+        class="relative flex items-center justify-center px-6 py-3 bg-blue-500 hover:bg-blue-700 text-white text-lg font-semibold rounded-full shadow-lg transform hover:scale-105 transition-transform duration-200">
+        <span class="absolute inset-0 rounded-full bg-blue-600 opacity-50 animate-ping"></span>
+        <span class="relative z-10 pr-2">New Arrivals</span>
+      </a>
+    </div>
    <div class="mt-8 flex flex-wrap gap-4 justify-center">
-     <div class="grid grid-cols-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="ProductGrid">
+     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 px-6 2xl:px-24 gap-8 place-items-center  " id="ProductGrid">
      </div>
    </div>
  </section>

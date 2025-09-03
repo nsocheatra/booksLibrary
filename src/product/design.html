@@ -4,10 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../output.css" />
-    <link rel="icon" type="image/x-icon" href="./assets/icon/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./assets/icon/favicon.ico" />
+
+    <!-- awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Book Library</title>
   </head>
-  <body class="bg-gradient-to-r from-blue-400 to-blue-300 text-white">
+  <body class="bg-gradient-to-r from-blue-400 to-blue-300 text-white font-semibold">
    <main class="sticky top-0 z-10">
       <header
         class="flex flex-wrap sm:justify-start sm:flex-nowrap w-full text-sm py-3 border-b border-white/20 sticky top-0 z-10 backdrop-blur-md bg-white/10"
@@ -40,12 +44,12 @@
             >
               <a
                 class="font-semibold text-neutral-50 hover:text-blue-500 focus:outline-hidden focus:text-blue-500"
-                href="../product/special-offers.html"
+                href="../product/404.html"
                 >Special Offers</a
               >
               <a
                 class="font-semibold text-neutral-50 hover:text-blue-500 focus:outline-hidden focus:text-blue-500"
-                href="../product/new-books.html"
+                href="../product/404.html"
                 >New Books</a
               >
               <a
@@ -55,7 +59,7 @@
               >
               <a
                 class="font-semibold text-neutral-50 hover:text-blue-500 focus:outline-hidden focus:text-blue-500"
-                href="../product/best-sellers.html"
+                href="../product/404.html"
                 >Best Sellers</a
               >
             </div>
@@ -63,22 +67,56 @@
         </nav>
       </header>
     </main>
+      <!-- Sidebar -->
+    <div class="flex justify-center gap-4 m-auto">
+    <section class="flex-none w-10 md:w-36 lg:w-64 xl:w-80 2xl:w-128 p-4 sm:text-xs md:text-xl lg:text-xl xl:text-xl 2xl:text-xl">
+      <aside class="w-48 bg-white/10  text-white p-4 shadow-lg sticky top-0">
+        <h2 class="text-lg font-semibold mb-4 ">Categories</h2>
+        <nav class="flex flex-col space-y-2">
+          <a href="../product/programming.html" class="px-3 py-2  hover:bg-blue-500 rounded">Programming</a>
+          <a href="../product/design.html" class="px-3 py-2  hover:bg-blue-500 rounded">Design</a>
+          <a href="../product/404.html" class="px-3 py-2  hover:bg-blue-500 rounded">Business</a>
+          <a href="../product/404.html" class="px-3 py-2  hover:bg-blue-500 rounded">Science</a>
+          <a href="../product/404.html" class="px-3 py-2  hover:bg-blue-500 rounded">Gaming</a>
+          <a href="../product/404.html" class="px-3 py-2  hover:bg-blue-500 rounded">Music</a>
+          <a href="../product/404.html" class="px-3 py-2  hover:bg-blue-500 rounded"
+            >Photography</a
+          >
+        </nav>
+      </aside>
+    </section>
+    </main>
+<!-- card -->
+ <section class="py-8">
+   <div class="mt-8 gap-4">
+     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 px-6 2xl:px-24 gap-8 place-items-center  " id="ProductGrid">
+     </div>
+   </div>
+ </section>
+ <script src="../script/categories.js"></script>
+<!-- end card -->
+    <!-- EndSidebar -->
+    </div>
 
     <!-- footer -->
     <main class="mt-24">
       <footer>
         <div class="mx-auto px-4 pt-12 pb-8 sm:px-6 lg:px-8">
           <div class="mx-auto max-w-max">
-            <strong class="block text-center text-xl font-bold sm:text-3xl pb-2">Stay Updated with Books Library</strong>
-              <p class="text-center">Get the latest book recommendations, reading tips, and exclusive content delivered to your inbox.</p>
-            
+            <strong class="block text-center text-xl font-bold sm:text-3xl pb-2"
+              >Stay Updated with Books Library</strong
+            >
+            <p class="text-center">
+              Get the latest book recommendations, reading tips, and exclusive
+              content delivered to your inbox.
+            </p>
 
-            <form class="mt-6 mx-auto max-w-md ">
+            <form class="mt-6 mx-auto max-w-md">
               <div class="relative max-w-lg">
                 <label class="sr-only" for="email"> Email </label>
 
                 <input
-                  class="w-full rounded-full border-white/10  bg-white/10 p-4 pe-32 text-sm font-medium"
+                  class="w-full rounded-full border-white/10 bg-white/10 p-4 pe-32 text-sm font-medium"
                   id="email"
                   type="email"
                   placeholder="john@doe.com"
@@ -334,8 +372,8 @@
             </div>
           </div>
           <div class="mt-6">
-            <hr class="border-white/20">
-            <br>
+            <hr class="border-white/20" />
+            <br />
             <p class="text-center text-m/relaxed text-white">
               © Books Library 2025. All rights reserved.
             </p>
