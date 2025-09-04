@@ -1,3 +1,13 @@
+  document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.querySelector("[data-collapse-toggle]");
+    const menu = document.getElementById("navbar-sticky");
+
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  });
+
+
 const categories = document.getElementById("categories");
 const BASE_URL = "https://api.itbook.store/1.0/new";
 let card = "";
