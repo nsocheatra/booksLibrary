@@ -21,7 +21,7 @@ async function getProducts() {
           <div class="flex items-center justify-between">
             <span class="text-3xl font-bold text-gray-900 dark:text-white">${item.price}</span>
             <button class="button bg-blue-600 rounded-full px-5 py-3 text-sm font-medium text-white transition hover:bg-blue-700">
-              <span class="label">+ Add to cart</span>
+              <span class="label">Views details${item.views}</span>
               <span class="gradient-container">
                 <span class="gradient"></span>
               </span>
